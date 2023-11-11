@@ -4,7 +4,6 @@ import Books from "../components/Books";
 import { getAllBooks } from "../modules/fetch";
  
 const Homepage = () => {
-  // export default function Homepage() {
   const [books, setBooks] = useState([]);
   useEffect(() => {
     const fetchBooks = async () => {

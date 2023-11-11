@@ -46,7 +46,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({
-  storage: storage, limits: { fileSize: 10000000 } // 10MB limit
+  storage: storage, limits: { fileSize: 10000000 }
 });
 
 
@@ -109,7 +109,7 @@ app.post("/books", authenticateTokenMiddleware, upload.single('image'), async (r
         publisher,
         year: parseInt(year),
         pages: parseInt(pages),
-        image: req.file.path // add the path to the uploaded image to the book data
+        image: req.file.path 
       },
     });
     res.json({ book });

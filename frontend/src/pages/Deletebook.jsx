@@ -6,8 +6,7 @@ import { deleteBook, getBookDetailById } from "../modules/fetch";
 export default function DeleteBookPage() {
   const { id } = useParams();
   const [book, setBook] = useState(null);
-  const navigate = useNavigate(); // Menggunakan useNavigate untuk navigasi
-
+  const navigate = useNavigate(); 
   useEffect(() => {
     const fetchBook = async () => {
       try {

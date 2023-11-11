@@ -18,7 +18,7 @@ export default function ImageUploader() {
     
     setBookData((prevData) => ({
       ...prevData,
-      image: file.name, // Sesuaikan dengan properti gambar yang sesuai di objek buku
+      image: file.name,
     }));
   }
 
